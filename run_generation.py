@@ -25,4 +25,5 @@ if __name__ == '__main__':
         components=example_components,
         rms_noise_level=config.RMS_NOISE_MIN
     )
+    print("Plotting")
     plot_spectrum(data)
