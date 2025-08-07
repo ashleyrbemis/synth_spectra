@@ -3,6 +3,25 @@ from scipy.stats import norm
 import config 
 
 def gaussian(x, amplitude, mean, sigma):
+    """
+    Generates a Gaussian function.
+
+    Parameters
+    ----------
+    x : array
+        Array of values at which to evaluate the Gaussian function.
+    amplitude: float 
+        The amplitude of the Gaussian.
+    mean : float 
+        The mean value of the Gaussian, within the range of x.
+    sigma : float
+        The standard deviation of the Gaussian.
+        
+    Returns
+    -------
+    array
+        An array of length x containing the evaluated Gaussian
+    """
     if np.isclose(amplitude, 0.0, atol=1e-9): # Check if amplitude is effectively zero
         return np.zeros_like(x)
     if np.isclose(sigma, 0.0, atol=1e-9):

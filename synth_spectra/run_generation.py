@@ -4,7 +4,18 @@ import config
 from spectrum_utils import generate_synthetic_spectrum
 
 def plot_spectrum(spectrum_data):
-    """A reusable function to plot spectrum data."""
+    """
+    A reusable function to plot spectrum data.
+
+    Parameters
+    ----------
+    spectrum_data : dict 
+        Dictionary containing the spectral arrays.
+
+    Returns
+    ----------
+    matplotlib plot
+    """
     fig, ax = plt.subplots(figsize=(12, 7))
     ax.plot(spectrum_data['x'], spectrum_data['y_observed'], label='Observed')
     ax.plot(spectrum_data['x'], spectrum_data['y_true'], label='True', linestyle='--')
