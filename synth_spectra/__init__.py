@@ -1,3 +1,1 @@
-import os
-
-__version__ = "0.0.1"
+from .spectrum_utils import generate_spectrum
