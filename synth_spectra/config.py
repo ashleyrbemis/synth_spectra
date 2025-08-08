@@ -1,5 +1,5 @@
 # config.py
-# This file contains configuration parameters for the synthetic spectra generation.
+# This file contains default configuration parameters for the synthetic spectra generation.
 
 # Spectrum Paramters
 

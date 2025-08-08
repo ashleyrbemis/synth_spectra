@@ -16,7 +16,7 @@ def gaussian(x, amplitude, mean, sigma):
         The mean value of the Gaussian, within the range of x.
     sigma : float
         The standard deviation of the Gaussian.
-        
+
     Returns
     -------
     array
@@ -29,8 +29,8 @@ def gaussian(x, amplitude, mean, sigma):
     return amplitude * np.exp(-((x - mean)**2) / (2 * sigma**2))
 
 def generate_synthetic_spectrum(
-    x_range: tuple = (0.0, 100.0),
-    num_channels: int = 256,
+    x_range: tuple = (config.DATA_X_MIN, config.DATA_X_MAX),
+    num_channels: int = config.NUM_CHANNELS,
     components: list = None,
     rms_noise_level: float = 0.1,
     seed: int = None
