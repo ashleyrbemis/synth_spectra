@@ -1,1 +1,1 @@
-from .spectrum_utils import generate_spectrum
+from .spectrum_utils import generate_synthetic_spectrum

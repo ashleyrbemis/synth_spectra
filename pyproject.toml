@@ -21,7 +21,7 @@ classifiers = [
 dependencies = [
     "numpy",
     "matplotlib", 
-    "scipy,
+    "scipy",
 ]
 
 [project.urls]
