@@ -1,6 +1,6 @@
 import numpy as np
 from scipy.stats import norm
-import config 
+from . import config 
 
 def gaussian(x, amplitude, mean, sigma):
     """
