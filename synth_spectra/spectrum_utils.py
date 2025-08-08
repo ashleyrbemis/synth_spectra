@@ -71,7 +71,7 @@ def generate_synthetic_spectrum(
     chan_wid = (x_range[1] - x_range[0]) / (num_channels - 1)
 
     if components is None:
-        components = [{'amplitude': 5.0, 'mean': 40.0, 'sigma': 3.0}]
+        components = [{'amplitude': 5.0, 'mean': 1500.0, 'sigma': 80.0}]
         print("Using default single Gaussian component.")
 
     y_true = np.zeros_like(x)
