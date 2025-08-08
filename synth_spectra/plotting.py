@@ -1,6 +1,11 @@
 import matplotlib.pyplot as plt
+from typing import Tuple
+from matplotlib.figure import Figure
+from matplotlib.axes import Axes
 
-def plot_spectrum(spectrum_data):
+def plot_spectrum(
+        spectrum_data : dict = {}
+    ) -> Tuple[Figure,Axes]:
     """
     A reusable function to plot spectrum data.
 
