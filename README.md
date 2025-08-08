@@ -4,9 +4,9 @@ This is a simple tool for generating synthetic astronomical spectra. You can use
 
 ### How It's Organized
 
-* `config.py`: Contains all the settings you might want to tweak, like the spectral range and noise levels.
+* `config.py`: Contains all the default spectra properties you might want to tweak, like the spectral range and noise levels.
 * `spectrum_utils.py`: The core library with functions that do the actual work of building a spectrum.
-* `run_generation.py`: The main script you execute to see an example plot.
+* `plotting.py`: The main script you execute to see an example plot.
 
 ### Getting Started
 
@@ -23,8 +23,17 @@ This is a simple tool for generating synthetic astronomical spectra. You can use
     conda install numpy scipy matplotlib
     ```
 
-3.  **Run the script:**
+3.  **Installation:**
     ```bash
-    python run_generation.py
+    pip install -e .
+    ```
+
+4.  **Run the code:**
+    ```python
+    import synth_spectra
+    import matplotlib.pyplot as plt
+    spec   = synth_spectra.generate_synthetic_spectrum()
+    fig,ax = synth_spectra.plot_spectrum(spec)
+    plt.show()
     ```
     This will generate a sample spectrum and show you a plot.
