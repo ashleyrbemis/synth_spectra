@@ -2,7 +2,8 @@ import numpy as np
 from scipy.stats import norm
 from . import config 
 
-def gaussian(x, amplitude, mean, sigma):
+def gaussian(x : np.array, amplitude : float, mean : float, sigma : float
+) -> np.array:
     """
     Generates a Gaussian function.
 
