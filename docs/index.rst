@@ -6,15 +6,23 @@
 Welcome to synth_spectra's documentation!
 =========================================
 
+``synth_spectra`` is a package to simulate simplistic spectra and plot them.
+
+It is publically available on `Github <https://github.com/ashleyrbemis/synth_spectra>`_ and `PyPi <https://pypi.org/project/synth-spectra/>`_.
+
 .. toctree::
    :maxdepth: 2
-   :caption: Contents:
+   :caption: Installation:
 
+   content/installation 
 
+.. toctree::
+   :maxdepth: 2
+   :caption: Code Documentation:
 
-Indices and tables
-==================
+   autoapi/index
 
-* :ref:`genindex`
-* :ref:`modindex`
-* :ref:`search`
+License:
+---------
+
+synth_spectra is available under the MIT License.
