@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "synth_spectra"
-version = "0.1.0"
+version = "1.0.0"
 authors = [
   { name="Ashley Bemis", email="arbemis@gmail.com" },
   { name="Annabella Meech", email="annabella.meech@cfa.harvard.edu" },
