@@ -14,7 +14,7 @@ How It's Organized
 
 * `config.py`: Contains all the settings you might want to tweak, like the spectral range and noise levels.
 * `spectrum_utils.py`: The core library with functions that do the actual work of building a spectrum.
-* `run_generation.py`: The main script you execute to see an example plot.
+* `plotting.py`: Contains all plotting routines.
 
 Installation
 ------------
