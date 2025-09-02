@@ -9,14 +9,11 @@ def plot_spectrum(
     """
     A reusable function to plot spectrum data.
 
-    Parameters
-    ----------
-    spectrum_data : dict 
-        Dictionary containing the spectral arrays.
+    Args:
+        spectrum_data (dict): Dictionary containing the spectral arrays.
 
-    Returns
-    ----------
-    matplotlib plot
+    Returns:
+        matplotlib plot
     """
     fig, ax = plt.subplots(figsize=(12, 7))
     ax.plot(spectrum_data['x'], spectrum_data['y_observed'], label='Observed')
